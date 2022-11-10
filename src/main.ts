@@ -2,6 +2,7 @@ import express, { Request, Response } from "express";
 
 import { settings } from "./config/settings";
 import { connectToDatabase } from "./databases/connect";
+import { notFoundMiddleware } from "./middleware/not-found";
 
 class App {
   constructor(private app = express()) {
@@ -9,6 +10,8 @@ class App {
     app.get("/", (req: Request, res: Response) => {
       res.send("API is running");
     });
+
+    app.use(notFoundMiddleware);
   }
 
   async run() {
