@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import express from "express";
 
 import { settings } from "./config/settings";
 import { connectToDatabase } from "./databases/connect";
@@ -9,9 +9,6 @@ import { productsRouter } from "./routes/products";
 class App {
   constructor(private app = express()) {
     app.use(express.json());
-    app.get("/", (req: Request, res: Response) => {
-      res.send("API is running");
-    });
 
     app.use("/api/v1/products", productsRouter);
     app.use(errorHandlerMiddleware);
