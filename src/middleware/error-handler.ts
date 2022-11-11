@@ -7,8 +7,8 @@ export const errorHandlerMiddleware = async (
   res: Response,
   next: NextFunction
 ) => {
-  res
-    .status(500)
-    .json({ message: "Oops, something went wrong... Please try again later." });
+  res.status(500).json({
+    message: error.message,
+  });
   next(error);
 };
