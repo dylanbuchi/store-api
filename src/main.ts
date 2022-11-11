@@ -9,6 +9,7 @@ import { productsRouter } from "./routes/products";
 class App {
   constructor(private app = express()) {
     app.use(express.json());
+    app.use(express.static("public"));
 
     app.use("/api/v1/products", productsRouter);
     app.use(errorHandlerMiddleware);
