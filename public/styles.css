@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: inherit;
+}
+
+.container a {
+  font-size: x-large;
+}
+
+.container {
+  padding: 1em;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
