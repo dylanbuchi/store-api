@@ -1,5 +1,5 @@
 # store-api
-A store REST API project built using Node.js, TypeScript, MongoDB, and Express. It allows clients to perform CRUD (Create, Read, Update, Delete) operations on product data in the MongoDB database. The API exposes endpoints for creating, finding, updating, and deleting products.
+A store REST API project built using Node.js, TypeScript, MongoDB, and Express.js. It allows clients to perform CRUD (Create, Read, Update, Delete) operations on product data in the MongoDB database. The API exposes endpoints for creating, finding, updating, and deleting products.
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en/)
 [![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
